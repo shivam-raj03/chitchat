@@ -22,7 +22,7 @@ const Chat = () => {
   const [users, setUsers] = useState('');
 
   //const ENDPOINT = 'http://localhost:4000/';
-  const ENDPOINT = 'https://chichat-hazel.vercel.app/'
+  const ENDPOINT = 'https://chichat-hazel.vercel.app'
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
