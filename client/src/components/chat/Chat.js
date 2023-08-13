@@ -21,8 +21,8 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [users, setUsers] = useState('');
 
-  //const ENDPOINT = 'http://localhost:4000/';
-  const ENDPOINT = 'https://sharechat.vercel.app/'
+  const ENDPOINT = 'http://localhost:4000/';
+  //const ENDPOINT = 'https://sharechat.vercel.app/'
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);

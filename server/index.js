@@ -9,8 +9,9 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
     cors: {
-        origin: "*",
-        methods: ["GET", "POST"],
+        origin: 'http://localhost:3000',
+        methods: ['GET', 'POST'], // Add any HTTP methods you need
+        credentials: true, // Allow cookies and authentication headers
     }
 });
 
